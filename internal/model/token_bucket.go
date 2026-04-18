@@ -1,8 +1,8 @@
 package structs
-import {
+
+import (
 	"sync"
-	"time"
-}
+)
 
 type User struct {
 	tokens         int
