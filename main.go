@@ -10,7 +10,7 @@ import (
 
 func main() {
 	r := gin.Default()
-	store := store.NewMemoryStore()
+	store := store.NewRedisStore()
 	service := service.NewRateLimiterService(store)
 
 	handler := handlers.NewRateLimiterHandler(service)
